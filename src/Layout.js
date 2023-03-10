@@ -17,7 +17,9 @@ function Layout() {
   // localStorage.clear();
   useEffect(() => {
     setNoteArray([latestNote, ...noteArray]);
-    if (noteArray.length > 0) setLiveNote(noteArray[0]);
+    if (noteArray.length > 0) {
+      setLiveNote(noteArray[0]);
+    }
   }, [latestNote]);
 
   useEffect(() => {
