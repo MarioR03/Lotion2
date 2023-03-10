@@ -1,5 +1,4 @@
 import { React } from "react";
-import { Link, useParams } from "react-router-dom";
 
 function NoteButton({ props, liveNote, setLiveNote }) {
   function checkIfLive() {

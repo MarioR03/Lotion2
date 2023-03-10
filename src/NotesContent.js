@@ -1,10 +1,8 @@
 import { React } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import { useParams } from "react-router-dom";
 
 function NoteContent({ liveNote, editNote, shouldEdit }) {
-  const { noteID } = useParams;
   const onEditField = (key, value) => {
     editNote({
       ...liveNote,

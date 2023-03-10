@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Layout from "./Layout";
-import NoteContent from "./NotesContent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
