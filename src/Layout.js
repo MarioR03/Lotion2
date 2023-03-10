@@ -23,7 +23,8 @@ function Layout() {
   }, [latestNote]);
 
   useEffect(() => {
-    if (existing) {
+    let bool = existing;
+    if (bool) {
       setNoteArray(JSON.parse(existing));
     }
   }, []);
