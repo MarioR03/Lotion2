@@ -1,0 +1,145 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: row;
+  border-bottom: 1px solid lightgray;
+  border-top: 3px solid blue;
+  align-items: center;
+}
+#title {
+  flex-grow: 1;
+  text-align: center;
+}
+#menu_button {
+  background-color: inherit;
+  padding: 17px 20px 17px 20px;
+  font-size: 2em;
+  border: none;
+}
+#content {
+  display: flex;
+  flex-direction: row;
+}
+#side_nav {
+  display: flex;
+  flex-direction: column;
+  width: 324px;
+  border-right: 1px solid lightgray;
+  height: 91.9vh;
+}
+#side_nav_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding: 0px 0px 0px 13px;
+  height: 40px;
+  align-items: center;
+}
+
+#addNote {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 15px 20px 15px 20px;
+  border: none;
+  background-color: inherit;
+  font-size: 1.3em;
+}
+/*NoteButton CSS*/
+
+.noteButtons {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-width: 0px 0px 1px 0px;
+  padding: 10px 0px 17px 13px;
+  align-items: flex-start;
+}
+.noteButtonsLive {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(64, 45, 80);
+  color: white;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-width: 0px 0px 1px 0px;
+  padding: 10px 0px 17px 13px;
+  align-items: flex-start;
+}
+.date {
+  color: gray;
+}
+.notePrevText {
+  margin-top: 5px;
+}
+
+/*NotesContent-edit CSS*/
+
+.notesContent-edit {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+.notesContent-editLive {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.noteContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.editDelete {
+  display: flex;
+}
+.quill {
+  height: 690px;
+}
+
+.edit,
+.delete {
+  background-color: inherit;
+  border: transparent;
+  width: 62.5px;
+  height: 75px;
+  padding: 0px 5px 0px 5px;
+}
+.nameDate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0px 0px 10px;
+}
+.noteContentBody {
+  flex: 1;
+  padding: 10px;
+}
+
+/*NotesContent-saved CSS*/
+.notesContent-saved {
+  display: none;
+}
